@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ravi Verma">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor JS Project - Time Traking Dashboard</title>
+</head>
+
+<body>
+    <div class="tt-dasboard__main-container">
+        <div class="tt-dashboard__inner-container">
+            <div class="tt-dashboard__profile-section">
+                <div class="tt-dashboard__profile-section-static">
+                    <div class="tt-dashboard__profile-section__image-container">
+                        <img src="image-jeremy.png" alt="Image profile person who time traking see.">
+                    </div>
+                    <div class="tt-dashboard__profile-section__typography-container">
+                        <p id="report-for">Report for</p>
+                        <h1>Jeremy <br> Robson</h1>
+                    </div>
+                </div>
+                <div class="tt-dashboard__profile-section__navigation">
+                    <p id="daily">Daily</p>
+                    <p id="weekly">Weekly</p>
+                    <p id="monthly">Monthly</p>
+                </div>
+            </div>
+            <div class="tt-dashboard__working-section">
+                <div class="tt-dashboard-cards" id="tt-dashboard-card-work">
+                    <div class="tt-dashboard-cards__image">
+                           <img src="icon-work.svg" alt="Icon work" loading="lazy">
+                    </div>
+                    <div class="tt-dashboard__inner-cards">
+                        <div class="tt-dashboard-cards__header">
+                            <h2 class="tt-dashboard-cards__header__title">Work</h2>
+                            <div class="tt-dashboard-cards__header__img">
+                                <img src="icon-ellipsis.svg" alt="three dots like a menu" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="tt-dashboard-cards__content">
+                            <h1 class="tt-dashboard-cards__content__working-hours"><span>32</span>hrs</h1>
+                        </div>
+                        <div class="tt-dashboard-cards__footer">
+                            <p class="tt-dashboard-cards__content__past-data">Last Week - <span>36 </span>hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tt-dashboard-cards" id="tt-dashboard-card-play">
+                    <div class="tt-dashboard-cards__image">
+                        <img src="icon-play.svg" alt="Icon play" loading="lazy">
+                    </div>
+                    <div class="tt-dashboard__inner-cards">
+                        <div class="tt-dashboard-cards__header">
+                            <h2 class="tt-dashboard-cards__header__title">Play</h2>
+                            <div class="tt-dashboard-cards__header__img">
+                                <img src="icon-ellipsis.svg" alt="three dots like a menu" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="tt-dashboard-cards__content">
+                            <h1 class="tt-dashboard-cards__content__working-hours"><span>10</span>hrs</h1>
+                        </div>
+                        <div class="tt-dashboard-cards__footer">
+                            <p class="tt-dashboard-cards__content__past-data">Last Week - <span>8 </span>hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tt-dashboard-cards" id="tt-dashboard-card-study">
+                    <div class="tt-dashboard-cards__image">
+                        <img src="icon-study.svg" alt="Icon study" loading="lazy">
+                    </div>
+                    <div class="tt-dashboard__inner-cards">
+                        <div class="tt-dashboard-cards__header">
+                            <h2 class="tt-dashboard-cards__header__title">Study</h2>
+                            <div class="tt-dashboard-cards__header__img">
+                                <img src="icon-ellipsis.svg" alt="three dots like a menu" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="tt-dashboard-cards__content">
+                            <h1 class="tt-dashboard-cards__content__working-hours"><span>4</span>hrs</h1>
+                        </div>
+                        <div class="tt-dashboard-cards__footer">
+                            <p class="tt-dashboard-cards__content__past-data">Last Week - <span>7 </span>hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tt-dashboard-cards" id="tt-dashboard-card-exercise">
+                    <div class="tt-dashboard-cards__image">
+                        <img src="icon-exercise.svg" alt="Icon Exercise" loading="lazy">
+                     </div>
+                    <div class="tt-dashboard__inner-cards">
+                        <div class="tt-dashboard-cards__header">
+                            <h2 class="tt-dashboard-cards__header__title">Exercise</h2>
+                            <div class="tt-dashboard-cards__header__img">
+                                <img src="icon-ellipsis.svg" alt="three dots like a menu" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="tt-dashboard-cards__content">
+                            <h1 class="tt-dashboard-cards__content__working-hours"><span>4</span>hrs</h1>
+                        </div>
+                        <div class="tt-dashboard-cards__footer">
+                            <p class="tt-dashboard-cards__content__past-data">Last Week - <span>5 </span>hrs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tt-dashboard-cards" id="tt-dashboard-card-social">
+                    <div class="tt-dashboard-cards__image">
+                        <img src="icon-social.svg" alt="Icon social" loading="lazy">
+                    </div>
+                    <div class="tt-dashboard__inner-cards">
+                        <div class="tt-dashboard-cards__header">
+                            <h2 class="tt-dashboard-cards__header__title">Social</h2>
+                            <div class="tt-dashboard-cards__header__img">
+                                <img src="icon-ellipsis.svg" alt="three dots like a menu" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="tt-dashboard-cards__content">
+                            <h1 class="tt-dashboard-cards__content__working-hours"><span>5</span>hrs</h1>
+                        </div>
+                        <div class="tt-dashboard-cards__footer">
+                            <p class="tt-dashboard-cards__content__past-data">Last Week - <span>10 </span>hrs</p>
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="tt-dashboard-cards" id="tt-dashboard-card-self-care">
+                    <div class="tt-dashboard-cards__image">
+                        <img src="icon-self-care.svg" alt="Icon self care" loading="lazy">
+                   </div>
+                    <div class="tt-dashboard__inner-cards">
+                        <div class="tt-dashboard-cards__header">
+                            <h2 class="tt-dashboard-cards__header__title">Self Care</h2>
+                            <div class="tt-dashboard-cards__header__img">
+                                <img src="icon-ellipsis.svg" alt="three dots like a menu" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="tt-dashboard-cards__content">
+                            <h1 class="tt-dashboard-cards__content__working-hours"><span>2</span>hrs</h1>
+                        </div>
+                        <div class="tt-dashboard-cards__footer">
+                            <p class="tt-dashboard-cards__content__past-data">Last Week - <span>2 </span>hrs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

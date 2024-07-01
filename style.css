@@ -1,0 +1,323 @@
+/* import font-family link  */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* custom variables  */
+
+:root {
+    /* primary color  */
+
+    --blue: hsl(246, 80%, 60%);
+    --soft-blue: hsl(195, 74%, 62%);
+    --light-red-100: hsl(15, 100%, 70%);
+    --light-red-200: hsl(348, 100%, 68%);
+    --lime-green: hsl(145, 58%, 55%);
+    --violet: hsl(264, 64%, 52%);
+    --soft-orange: hsl(43, 84%, 65%);
+
+    --work-clr: var(--light-red-100);
+    --play-clr: var(--soft-blue);
+    --study-clr: var(--light-red-200);
+    --exercise-clr: var(--lime-green);
+    --social-clr: var(--violet);
+    --self-care-clr: var(--soft-orange);
+
+    /* neutral color  */
+    --neutral-blue-400: hsl(226, 43%, 10%);
+    --neutral-blue-300: hsl(235, 46%, 20%);
+    --neutral-blue-200: hsl(235, 45%, 61%);
+    --neutral-blue-100: hsl(236, 100%, 87%);
+
+    /* accent color  */
+    --accent-white-clr: white;
+    --accent-black-clr: black;
+
+    /* font size  */
+    --fs-card-titles: 1.8rem;
+    --fs-body: 1.6rem;
+
+    /* font family  */
+    --ff-primary: "Rubik", sans-serif;
+
+    /* font weight */
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 900;
+
+    /* line height  */
+    --line-height-body: 1.5;
+
+    /* border radius  */
+    --border-radius: 1.5rem;
+}
+
+/* css reset  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
+    line-height: var(--line-height-body);
+    background-color: var(--neutral-blue-400);
+}
+
+/* styling  */
+.tt-dasboard__main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.tt-dashboard__inner-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+}
+
+.tt-dashboard__profile-section {
+    background-color: var(--neutral-blue-300);
+    border-radius: var(--border-radius);
+}
+
+
+.tt-dashboard__profile-section img {
+    width: 8rem;
+    border: 3px solid var(--accent-white-clr);
+    border-radius: 50%;
+}
+
+.tt-dashboard__profile-section-static {
+    background-color: var(--blue);
+    padding: 2rem 8rem 2rem 2rem;
+    border-radius: var(--border-radius);
+}
+
+.tt-dashboard__profile-section__navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.tt-dashboard__profile-section__typography-container p {
+    color: var(--neutral-blue-100);
+    padding-top: 3rem;
+}
+
+.tt-dashboard__profile-section__typography-container h1 {
+    font-size: clamp(2.3rem, 4vw, 3.5rem);
+    color: var(--accent-white-clr);
+    font-weight: var(--fw-light);
+    line-height: 1.2;
+    padding-bottom: 4rem;
+}
+
+.tt-dashboard__profile-section__typography-container p {
+    font-size: 1.5rem;
+}
+
+.tt-dashboard__profile-section__navigation {
+    padding: 2rem 1rem 1rem 2.5rem;
+}
+
+.tt-dashboard__profile-section__navigation p {
+    color: var(--neutral-blue-200);
+    padding-bottom: 1rem;
+    transition: color 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.tt-dashboard__profile-section__navigation :is(p):hover,
+:active {
+    color: var(--accent-white-clr);
+}
+
+.tt-dashboard__profile-section__navigation p.active{
+    color: var(--accent-white-clr) !important;
+}
+
+
+/*===================================
+       working section styling  
+=====================================*/
+
+.tt-dashboard__working-section {
+    grid-area: 1 / 2 / -1 / -1;
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2.5rem;
+}
+
+.tt-dashboard-cards {
+    width: 100%;
+    border-radius: var(--border-radius);
+    position: relative;
+    background-color: var(--neutral-blue-300);
+}
+
+
+.tt-dashboard-cards__image {
+    display: flex;
+    justify-content: end;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    height: 6rem;
+    padding-right: 2rem;
+}
+
+#tt-dashboard-card-work .tt-dashboard-cards__image {
+    background-color: var(--work-clr);
+}
+
+#tt-dashboard-card-play .tt-dashboard-cards__image {
+    background-color: var(--play-clr);
+}
+
+#tt-dashboard-card-study .tt-dashboard-cards__image {
+    background-color: var(--study-clr);
+}
+
+#tt-dashboard-card-exercise .tt-dashboard-cards__image {
+    background-color: var(--exercise-clr);
+}
+
+#tt-dashboard-card-social .tt-dashboard-cards__image {
+    background-color: var(--social-clr);
+}
+
+#tt-dashboard-card-self-care .tt-dashboard-cards__image {
+    background-color: var(--self-care-clr);
+}
+
+.tt-dashboard-cards__image img {
+    width: 6rem;
+}
+
+.tt-dashboard__inner-cards {
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    background-color: var(--neutral-blue-300);
+    transform: translateY(-1.5rem);
+}
+
+.tt-dashboard-cards__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tt-dashboard-cards__header h2 {
+    font-size: var(--fs-card-titles);
+    color: var(--accent-white-clr);
+}
+
+.tt-dashboard-cards__content h1 {
+    color: var(--accent-white-clr);
+    font-size: clamp(2.3rem, 4.3vw, 7rem);
+    font-weight: var(--fw-light);
+}
+
+.tt-dashboard-cards__footer p {
+    color: var(--neutral-blue-100);
+}
+
+
+
+/* responsive site code  */
+@media(max-width: 800px) {
+    .tt-dasboard__main-container {
+        min-height: 0;
+        margin-top: 2rem;
+    }
+
+    .tt-dashboard__inner-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .tt-dashboard__profile-section {
+        background-color: var(--neutral-blue-300);
+        border-radius: var(--border-radius);
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+
+    .tt-dashboard__working-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2.5rem;
+        width: 90vw;
+
+        grid-area: 2 / 1 / 3 / -1
+    }
+}
+
+@media (max-width: 400px) {
+    .tt-dashboard__working-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 3rem;
+    }
+
+    .tt-dashboard__profile-section__navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
