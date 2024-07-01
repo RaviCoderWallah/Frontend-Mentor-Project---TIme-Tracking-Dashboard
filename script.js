@@ -48,7 +48,7 @@ daily.addEventListener("click", () => {
                             <h1 class="tt-dashboard-cards__content__working-hours"><span>${dailyWorkCurrent}</span>hrs</h1>
                         </div>
                         <div class="tt-dashboard-cards__footer">
-                            <p class="tt-dashboard-cards__content__past-data">Last Week - <span>${dailyWorkPrevious} </span>hrs</p>
+                            <p class="tt-dashboard-cards__content__past-data">Past Day - <span>${dailyWorkPrevious} </span>hrs</p>
                         </div>
                     </div>
                 </div>
@@ -67,7 +67,7 @@ daily.addEventListener("click", () => {
                             <h1 class="tt-dashboard-cards__content__working-hours"><span>${dailyPlayCurrent}</span>hrs</h1>
                         </div>
                         <div class="tt-dashboard-cards__footer">
-                            <p class="tt-dashboard-cards__content__past-data">Last Week - <span>${dailyPlayPrevious} </span>hrs</p>
+                            <p class="tt-dashboard-cards__content__past-data">Past Day - <span>${dailyPlayPrevious} </span>hrs</p>
                         </div>
                     </div>
                 </div>
@@ -86,7 +86,7 @@ daily.addEventListener("click", () => {
                             <h1 class="tt-dashboard-cards__content__working-hours"><span>${dailyStudyCurrent}</span>hrs</h1>
                         </div>
                         <div class="tt-dashboard-cards__footer">
-                            <p class="tt-dashboard-cards__content__past-data">Last Week - <span>${dailyStudyPrevious} </span>hrs</p>
+                            <p class="tt-dashboard-cards__content__past-data">Past Day  - <span>${dailyStudyPrevious} </span>hrs</p>
                         </div>
                     </div>
                 </div>
@@ -105,7 +105,7 @@ daily.addEventListener("click", () => {
                             <h1 class="tt-dashboard-cards__content__working-hours"><span>${dailyExerciseCurrent}</span>hrs</h1>
                         </div>
                         <div class="tt-dashboard-cards__footer">
-                            <p class="tt-dashboard-cards__content__past-data">Last Week - <span>${dailyExercisePrevious} </span>hrs</p>
+                            <p class="tt-dashboard-cards__content__past-data">Past Day  - <span>${dailyExercisePrevious} </span>hrs</p>
                         </div>
                     </div>
                 </div>
@@ -124,7 +124,7 @@ daily.addEventListener("click", () => {
                             <h1 class="tt-dashboard-cards__content__working-hours"><span>${dailySocialCurrent}</span>hrs</h1>
                         </div>
                         <div class="tt-dashboard-cards__footer">
-                            <p class="tt-dashboard-cards__content__past-data">Last Week - <span>${dailySocialPrevious} </span>hrs</p>
+                            <p class="tt-dashboard-cards__content__past-data">Past Day  - <span>${dailySocialPrevious} </span>hrs</p>
                         </div>
                     </div>
         
@@ -144,7 +144,7 @@ daily.addEventListener("click", () => {
                             <h1 class="tt-dashboard-cards__content__working-hours"><span>${dailySelfCareCurrent}</span>hrs</h1>
                         </div>
                         <div class="tt-dashboard-cards__footer">
-                            <p class="tt-dashboard-cards__content__past-data">Last Week - <span>${dailySelfCarePrevious} </span>hrs</p>
+                            <p class="tt-dashboard-cards__content__past-data">Past Day  - <span>${dailySelfCarePrevious} </span>hrs</p>
                         </div>
                     </div>
                 </div>
@@ -190,7 +190,7 @@ monthly.addEventListener("click", () => {
                             <h1 class="tt-dashboard-cards__content__working-hours"><span>${monthlyWorkCurrent}</span>hrs</h1>
                         </div>
                         <div class="tt-dashboard-cards__footer">
-                            <p class="tt-dashboard-cards__content__past-data">Last Week - <span>${monthlyWorkPrevious} </span>hrs</p>
+                            <p class="tt-dashboard-cards__content__past-data">Last Month - <span>${monthlyWorkPrevious} </span>hrs</p>
                         </div>
                     </div>
                 </div>
@@ -209,7 +209,7 @@ monthly.addEventListener("click", () => {
                             <h1 class="tt-dashboard-cards__content__working-hours"><span>${monthlyPlayCurrent}</span>hrs</h1>
                         </div>
                         <div class="tt-dashboard-cards__footer">
-                            <p class="tt-dashboard-cards__content__past-data">Last Week - <span>${monthlyPlayPrevious} </span>hrs</p>
+                            <p class="tt-dashboard-cards__content__past-data">Last Month  - <span>${monthlyPlayPrevious} </span>hrs</p>
                         </div>
                     </div>
                 </div>
@@ -228,7 +228,7 @@ monthly.addEventListener("click", () => {
                             <h1 class="tt-dashboard-cards__content__working-hours"><span>${monthlyStudyCurrent}</span>hrs</h1>
                         </div>
                         <div class="tt-dashboard-cards__footer">
-                            <p class="tt-dashboard-cards__content__past-data">Last Week - <span>${monthlyStudyPrevious} </span>hrs</p>
+                            <p class="tt-dashboard-cards__content__past-data">Last Month  - <span>${monthlyStudyPrevious} </span>hrs</p>
                         </div>
                     </div>
                 </div>
@@ -247,7 +247,7 @@ monthly.addEventListener("click", () => {
                             <h1 class="tt-dashboard-cards__content__working-hours"><span>${monthlyExerciseCurrent}</span>hrs</h1>
                         </div>
                         <div class="tt-dashboard-cards__footer">
-                            <p class="tt-dashboard-cards__content__past-data">Last Week - <span>${monthlyExercisePrevious} </span>hrs</p>
+                            <p class="tt-dashboard-cards__content__past-data">Last Month - <span>${monthlyExercisePrevious} </span>hrs</p>
                         </div>
                     </div>
                 </div>
@@ -266,7 +266,7 @@ monthly.addEventListener("click", () => {
                             <h1 class="tt-dashboard-cards__content__working-hours"><span>${monthlySocialCurrent}</span>hrs</h1>
                         </div>
                         <div class="tt-dashboard-cards__footer">
-                            <p class="tt-dashboard-cards__content__past-data">Last Week - <span>${monthlySocialPrevious} </span>hrs</p>
+                            <p class="tt-dashboard-cards__content__past-data">Last Month  - <span>${monthlySocialPrevious} </span>hrs</p>
                         </div>
                     </div>
         
@@ -286,7 +286,7 @@ monthly.addEventListener("click", () => {
                             <h1 class="tt-dashboard-cards__content__working-hours"><span>${monthlySelfCareCurrent}</span>hrs</h1>
                         </div>
                         <div class="tt-dashboard-cards__footer">
-                            <p class="tt-dashboard-cards__content__past-data">Last Week - <span>${monthlySelfCarePrevious} </span>hrs</p>
+                            <p class="tt-dashboard-cards__content__past-data">Last Month  - <span>${monthlySelfCarePrevious} </span>hrs</p>
                         </div>
                     </div>
                 </div>
